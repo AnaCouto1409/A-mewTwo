@@ -8,7 +8,7 @@ const form = () => {
   const [funcionarios, setFuncionarios] = useState();
 useEffect(() => {
    api
-     .put("/funcionarios/3"),{
+     .post("/funcionarios"),{
   "nome_completo": "Amaury",
 	"email": "amaury@gmail.com",
 	"celular": 123,
