@@ -1,9 +1,12 @@
 import React from 'react'
+import header from '../header/header'
+import footer from '../footer/footer'
 
-const pages = () => {
+const cadastro = () => {
   return (
-   <header>
-    <button onClick={handleClick}>Cadastre!</button>
+    <div>
+        <header></header>
+        <button onClick={handleClick}>Cadastre!</button>
         <input type="name" id='name' placeholder='escreva seu nome completo'>
         </input>
         <input type="email" id='email' placeholder='escreva seu melhor email'>
@@ -16,9 +19,10 @@ const pages = () => {
         </input>
         <input type="datetime" id='datetime' placeholder='digite o periodo'>
         </input>
-   </header>
-   
+
+        <footer></footer>
+    </div>
   )
 }
 
-export default pages
+export default cadastro
